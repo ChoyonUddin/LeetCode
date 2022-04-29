@@ -4,22 +4,19 @@
 #Description: You are given an integer array nums. The unique elements of an array are the elements that appear exactly once in the array.
 #Return the sum of all the unique elements of nums
 
-#Progress: Under development 
+#Progress: Completed
 
 from typing import List
 
 
 def sumOfUnique(nums: List[int]):
     arr = []
-    for i in range(len(nums)):
-        if nums[i] in arr:
-            arr.pop(nums[i])
-        arr.append(nums[i])
-    if len(arr) == 1:
-        print(0)
-    print(sum(arr))
-    print(arr)
-sumOfUnique([1,2,3,2])
+    for i in nums:
+        if nums.count(i) == 1:
+            arr.append(i)
+    return arr
+           
+print(sumOfUnique([1,2,3,2]))
 
 '''
 Dictionary attempted solution
