@@ -11,10 +11,13 @@
 
 def asterick(word : str):
     Asterickcount = 0
-    for i in range(len(word)):
+    for i in range(len(word.lower())):
         if Asterickcount>1:
             return(False)
-            
+
+        if word[i] == '*' and word[len(word)-1-i] == '*':
+            return (False)
+        
         if word[i] != word[len(word)-1-i]:
             if word[i] == '*' or word[len(word)-1-i] == '*':
                 Asterickcount +=1
@@ -22,4 +25,4 @@ def asterick(word : str):
             return(False)
 
     return(True)
-print(asterick('Raceca*'))
+print(asterick('raceca*'))
