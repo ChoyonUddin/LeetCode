@@ -4,7 +4,7 @@
 #characters instead of the character itself ex: raceca* where the final r is replaced.
 
 #If there are more than 2 letters replaced than the str equates to false. I don't know some of the edges cases or how specific it should be
-#but from the view test cases I saw, assume Str is longer than 6 letters
+#but from the view test cases I saw, assume Str is at least 6 letters of longer.
 
 #Progress: Completed/Check for Edge cases
 
