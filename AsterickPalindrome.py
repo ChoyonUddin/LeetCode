@@ -8,21 +8,17 @@
 
 #Progress: Completed/Check for Edge cases
 
+#Update: Made more efficiently using .count(*) therefore elminating edge case check
 
 def asterick(word : str):
-    Asterickcount = 0
     for i in range(len(word.lower())):
-        if Asterickcount>1:
+        if word.count('*')>1:
             return(False)
-
-        if word[i] == '*' and word[len(word)-1-i] == '*':
-            return (False)
         
-        if word[i] != word[len(word)-1-i]:
+        if (word[i] != word[len(word)-1-i]):
             if word[i] == '*' or word[len(word)-1-i] == '*':
-                Asterickcount +=1
                 continue
             return(False)
 
     return(True)
-print(asterick('raceca*'))
+print(asterick('*aceca*'))
