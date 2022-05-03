@@ -19,7 +19,7 @@ def sumOfUnique(nums: List[int]):
 print(sumOfUnique([1,2,3,2]))
 
 '''
-Dictionary attempted solution
+Dictionary attempted solution: Ignore this
 
  for i in range(len(nums)):
         if nums[i] not in mydic:
@@ -29,5 +29,4 @@ Dictionary attempted solution
     print(sum(mydic.values()))
     print(mydic)
 sumOfUnique([1,2,3,4,5])
-
 '''
