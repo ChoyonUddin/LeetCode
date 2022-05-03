@@ -12,7 +12,7 @@
 #Progress: Completed 
 
 def capitalizeTitle(title: str) -> str:
-    sentence = " "
+    sentence = ""
     for word in title.lower().split(" "):
         if len(word) > 2:
             sentence += word.capitalize() + " "
