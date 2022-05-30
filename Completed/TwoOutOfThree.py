@@ -6,7 +6,7 @@ from typing import List
 #return a distinct array containing all the values that are present in at least two out of the three arrays. 
 #You may return the values in any order.
 
-#Progress: UNder Development 
+#Progress: Completed/Working on a better one 
 
 #Note: Dumb solution literally hardcoded 
 
