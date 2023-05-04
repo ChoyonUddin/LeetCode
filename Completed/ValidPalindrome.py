@@ -10,7 +10,12 @@
 #Progress: Completed 
 
 
-def isPalindrome(self, s: str) -> bool:
+def isPalindrome(s: str) -> bool:
+    return s[::-1].lower() == s.lower() if s.isalnum() else False
+print(isPalindrome("racecar"))
+
+'''
+    #OLD CODE
     newstring = ""
     for i in s.lower():
         if i.isalnum():
@@ -18,3 +23,4 @@ def isPalindrome(self, s: str) -> bool:
     if newstring == newstring[::-1]:
         return True
     return False
+'''   
