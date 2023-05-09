@@ -11,9 +11,7 @@ import timeit
 
 #Update: Made more efficiently using .count(*) therefore elminating edge case check
 
-
 def asterick(word : str):
-
     if word.count('*')>1:
             return(False)
 
@@ -21,9 +19,10 @@ def asterick(word : str):
         if (word[i] != word[len(word)-1-i]):
             if word[i] == '*' or word[len(word)-1-i] == '*':
                 continue
-            return(False)
+            return False
 
-    return(True)
-print(asterick('*aceca*'))
+    return True
+print(asterick("racecar*"))
+
 
 
