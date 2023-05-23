@@ -11,7 +11,5 @@
 #Notes: Completed
 from typing import List
 def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
-    result = []
-    for i in candies:
-        result.append(max(candies) <= i + extraCandies)
-    return result
+    return [max(candies) <= i + extraCandies for i in candies]
+    
