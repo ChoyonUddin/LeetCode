@@ -8,12 +8,11 @@ You must write an algorithm with O(log n) runtime complexity.
 '''
 
 def search(nums: List[int], target: int) -> int:
-    low = 0
-    high = len(nums) -1 
+    low,high = 0,len(nums) -1
 
     while low <= high:
         mid = low + (high-low) //2
-        print(mid)
+      
         if nums[mid] == target:
             return mid  
         

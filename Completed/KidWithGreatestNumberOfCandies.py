@@ -8,7 +8,8 @@
 #Note that multiple kids can have the greatest number of candies.
 
 #Difficulty: Easy
-#Notes: Completed
+#Status: Completed
+#Notes: Lmao list comp beats 98% of solutions
 from typing import List
 def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
     return [max(candies) <= i + extraCandies for i in candies]

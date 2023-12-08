@@ -11,6 +11,24 @@
 #Progress: Completed 
 #Notes: Lost the original file so this is just what I submitted on leetcode
 
+def missingRolls(self, rolls: List[int], mean: int, n: int) -> List[int]:
+        res = []
+        missingSum = mean*(n+len(rolls)) - sum(rolls) 
+        if missingSum < n or missingSum > n * 6:
+            return []
+
+        nextNum = missingSum//n
+        remaining = missingSum%n
+
+        for i in range(n):
+            if i < remaining:
+                res.append(nextNum + 1)
+                continue
+            res.append(nextNum)
+            
+        return res
+
+'''Old Solution
 import numpy as np
 from typing import List
 def missingRolls(self, rolls: List[int], mean: int, n: int) -> List[int]:
@@ -25,5 +43,8 @@ def missingRolls(self, rolls: List[int], mean: int, n: int) -> List[int]:
                 n -= 1
                 mAvg = mt/n
         return(missingNumbers)
-    return([])    
+    return([])   
+'''
+
+ 
  
