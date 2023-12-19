@@ -60,7 +60,7 @@ count =0
 o = nums.index(max(nums))
 #print(o,type(o))
 #print(1//3)
-def missingNumber(nums) -> int:
+def missingNumber(nums):
         arr = tuple(set(range(0,len(nums)+1)) - set(nums))[0]
 missingNumber(nums=nums)
 

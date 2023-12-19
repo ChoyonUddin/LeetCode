@@ -10,7 +10,7 @@
 
 #Progress: Completed 
 #Notes: Lost the original file so this is just what I submitted on leetcode
-
+from typing import List
 def missingRolls(self, rolls: List[int], mean: int, n: int) -> List[int]:
         res = []
         missingSum = mean*(n+len(rolls)) - sum(rolls) 

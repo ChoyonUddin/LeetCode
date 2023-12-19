@@ -9,7 +9,7 @@
 #Progress: Completed 
 from typing import List
 
-def twoSum(nums: List[int], target: int) -> List[int]:
+def twoSum(nums: List[int], target: int):
     complement = {}
     for i in range(len(nums)):
         if target - nums[i] in complement:
