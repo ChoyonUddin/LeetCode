@@ -11,5 +11,4 @@
    Day2: Ain't do shit
    
 '''
-#imports
-from PIL import Image
+
