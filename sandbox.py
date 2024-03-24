@@ -54,21 +54,23 @@ print(m.ceil(1/2))
 
 #print(s + 'a')
 #print(s,q)
-nums = [1,2,3,4,5,6]
-arr = []
-count =0
-o = nums.index(max(nums))
-#print(o,type(o))
-#print(1//3)
-def missingNumber(nums):
-        arr = tuple(set(range(0,len(nums)+1)) - set(nums))[0]
-missingNumber(nums=nums)
+# nums = [1,2,3,4,5,6]
+# arr = []
+# count =0
+# o = nums.index(max(nums))
+# #print(o,type(o))
+# #print(1//3)
+# def missingNumber(nums):
+#         arr = tuple(set(range(0,len(nums)+1)) - set(nums))[0]
+# missingNumber(nums=nums)
 
-k=3
-nums = [1,2,3]
+# k=3
+# nums = [1,2,3]
 
-for i in nums:
-    if k-i in nums:
-          count+=1
-          nums.pop(k-i)
-print(count)
+# for i in nums:
+#     if k-i in nums:
+#           count+=1
+#           nums.pop(k-i)
+# print(count)
+dict = {'(':')','[':']','{':'}'}
+print(list(dict.values())[0])
