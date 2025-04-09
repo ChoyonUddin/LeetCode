@@ -11,7 +11,7 @@
 #Progress: Under Development 
 
 #Notes:
-
+[1,151,241,9,22,351]
 def integerReplacement(n: int) -> int:
     '''
     if n % 2 == 1 and n != 1:
