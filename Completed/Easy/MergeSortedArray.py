@@ -32,7 +32,7 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 
 '''
-
+from typing import List
 
 def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
     """
