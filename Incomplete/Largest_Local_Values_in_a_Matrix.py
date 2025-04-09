@@ -13,6 +13,5 @@ def largestLocal(grid: List[List[int]]):
     maxLocal = [[]]
     for i in range(len(grid)-3):
         for j in grid[i]:
-            
-
+            return 0
 print(largestLocal(grid = [[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]))
