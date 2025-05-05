@@ -6,3 +6,4 @@
 #             return i
 #     return -1
 # print(strStr(haystack = "aaa", needle = "aaa"))
+print(4%12)
