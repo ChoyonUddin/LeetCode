@@ -37,6 +37,7 @@ numbers is sorted in non-decreasing order.
 -1000 <= target <= 1000
 The tests are generated such that there is exactly one solution.
 '''
+from typing import List
 def twoSum(self, numbers: List[int], target: int) -> List[int]:
     l,r=0,len(numbers)-1
     while l<r:
