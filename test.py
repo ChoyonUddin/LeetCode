@@ -6,6 +6,5 @@
 #             return i
 #     return -1
 # print(strStr(haystack = "aaa", needle = "aaa"))
-s = {([2,3,5,6])}
-# s.add(4)
-print(s)
+s = 'hello'
+print(s[1:3])
